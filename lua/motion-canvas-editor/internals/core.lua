@@ -19,7 +19,6 @@ Core.get_active_selection = function(bufnr)
 		Core.nvim_set_normal_mode()
 		local sel_start_row, sel_start_col = unpack(vim.api.nvim_buf_get_mark(bufnr, "<"))
 		local sel_end_row, sel_end_col = unpack(vim.api.nvim_buf_get_mark(bufnr, ">"))
-		nvim_set_visual_mode_by_key(mode)
 
 		return {
 			start_row = sel_start_row - 1, -- fix 1-based index
