@@ -53,12 +53,12 @@ Default configuration options:
 
 ## Default Keymaps
 
-| mods  | keys       | action                      |
-| ----- | ---------- | --------------------------- |
-| n     | <leader>ms | M.start_session             |
-| n     | <leader>ma | M.try_load_session          |
-| n     | <leader>ml | M.load_session              |
-| n     | <leader>me | M.end_session               |
-| n     | <leader>mw | M.write_session             |
-| n v x | <leader>mn | M.push_snapshot             |
-| n     | <leader>mz | M.scroll_viewport_to_cursor |
+| mods  | keys         | action                      |
+| ----- | ------------ | --------------------------- |
+| n     | `<leader>ms` | M.start_session             |
+| n     | `<leader>ma` | M.try_load_session          |
+| n     | `<leader>ml` | M.load_session              |
+| n     | `<leader>me` | M.end_session               |
+| n     | `<leader>mw` | M.write_session             |
+| n v x | `<leader>mn` | M.push_snapshot             |
+| n     | `<leader>mz` | M.scroll_viewport_to_cursor |
