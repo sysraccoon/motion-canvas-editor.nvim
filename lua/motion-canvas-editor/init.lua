@@ -263,17 +263,15 @@ end
 
 local create_default_keymaps = function()
 	local map = function(mods, combo, action)
-		for _, mod in ipairs(mods) do
-			vim.keymap.set(mod, combo, action, { noremap = true })
-		end
+    vim.keymap.set(mods, combo, action, { noremap = true })
 	end
 
 	map({ "n" }, "<leader>ms", M.start_session)
-	map({ "n" }, "<leader>mS", M.try_load_session)
+	map({ "n" }, "<leader>ma", M.try_load_session)
 	map({ "n" }, "<leader>ml", M.load_session)
 	map({ "n" }, "<leader>me", M.end_session)
 	map({ "n" }, "<leader>mw", M.write_session)
-	map({ "n", "v", "x" }, "<leader>mp", M.push_snapshot)
+	map({ "n", "v", "x" }, "<leader>mn", M.push_snapshot)
 	map({ "n" }, "<leader>mz", M.scroll_viewport_to_cursor)
 end
 
