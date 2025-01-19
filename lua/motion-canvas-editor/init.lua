@@ -1,11 +1,10 @@
 local default_config = {
-	viewport_height = 24,
-	viewport_highlight = "#313244",
-
-	auto_save = true,
-	default_session_path = "mce-session.json",
-	default_commands = true,
-	default_keymaps = true,
+	viewport_height = 24, -- set viewport line count that can be present in animation
+	viewport_highlight = "#313244", -- set viewport indicator background color
+	auto_save = true, -- automatically save session on snapshot list editing
+	default_session_path = "mce-session.json", -- default session file name
+	default_commands = true, -- enable default commands
+	default_keymaps = true, -- enable default keymaps
 }
 
 local Core = require("motion-canvas-editor.internals.core")
