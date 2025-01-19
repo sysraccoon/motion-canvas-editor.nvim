@@ -30,12 +30,12 @@ Default configuration options:
 
 ```lua
 {
-	viewport_height = 24, -- set viewport line count that can be present in animation
-	viewport_highlight = "#313244", -- set viewport indicator background color
-	auto_save = true, -- automatically save session when snapshot list modified
-	default_session_path = "mce-session.json", -- default session file name
-	default_commands = true, -- enable default commands
-	default_keymaps = true, -- enable default keymaps
+  viewport_height = 24, -- set viewport line count that can be present in animation
+  viewport_highlight = "#313244", -- set viewport indicator background color
+  auto_save = true, -- automatically save session when snapshot list modified
+  default_session_path = "mce-session.json", -- default session file name
+  default_commands = true, -- enable default commands
+  default_keymaps = true, -- enable default keymaps
 }
 ```
 
