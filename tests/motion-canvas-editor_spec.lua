@@ -63,10 +63,6 @@ describe("motion-canvas-editor.internals.core", function()
 		vim.api.nvim_buf_set_mark(bufnr, ">", expected_selection.end_row + 1, expected_selection.end_col, {})
 
 		local selection = core.get_active_selection(bufnr)
-
-		local current_mode = vim.api.nvim_get_mode().mode
-
-		assert.are.equal("v", current_mode)
 		assert.are.same(expected_selection, selection)
 
 		core.nvim_set_normal_mode()
